@@ -1,18 +1,45 @@
 # 5. .gitignore
+
+
+
+# Python-related
 *.pyc
-__pycache__
-db.sqlite3
-.env
-.venv
-virtenv/
-env/
-venv/
-.DS_Store
 *.pyo
 *.pyd
-.Python
-.idea/
-.vscode/
-*.log
+__pycache__/
+*.sqlite3
+
+# Virtual environment
+virtenv/
+venv/
+
+# Django-related
+db.sqlite3
+/media/
 staticfiles/
-media/
+
+# Secrets
+*.env
+.venv
+
+# Node.js/Frontend-related
+node_modules/
+frontend/node_modules/
+frontend/.env
+
+# Editor/IDE-specific
+.vscode/
+*.swp
+.idea/
+*.iml
+
+# Logs
+*.log
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Render Deployment-related (optional, not critical)
+*.env.production
+*.env.local
